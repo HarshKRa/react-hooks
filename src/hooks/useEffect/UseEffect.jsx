@@ -5,6 +5,8 @@
 //  -- Timers like setTimeOut and  setInterval
 
 import React, { useEffect, useState } from "react";
+import UseEffect1 from "./UseEffect1";
+import UseEffectApi from "./UseEffectApi";
 
 const UseEffect = () => {
 
@@ -31,16 +33,18 @@ const UseEffect = () => {
 //   },[])
 
 // 3. useEffect(cb,[variables])  // when count will change it will run again
-useEffect(()=>{
-    setTimeout(()=>{
-        setCount(count => count + 1)
-    },2000)
-  },[count])
+// useEffect(()=>{
+//     setTimeout(()=>{
+//         setCount(count => count + 1)
+//     },2000)
+//   },[count])
 
 
   return (
     <>
-      <h1>I've rendered {count} times</h1>
+      {/* <h1>I've rendered {count} times</h1> */}
+      {/* <UseEffect1 /> */}
+      <UseEffectApi />
     </>
   );
 };

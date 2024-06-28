@@ -3,6 +3,7 @@
 
 import React, { useEffect, useState, useRef } from "react";
 import UseRef1 from "./UseRef1";
+import Uncontrolled from "./Uncontrolled";
 
 const UseRef = () => {
   // Example 1
@@ -42,7 +43,8 @@ const UseRef = () => {
 
       <h1>Render Count : {count.current}</h1>
 
-      <UseRef1 />
+      {/* <UseRef1 /> */}
+      <Uncontrolled />
     </>
   );
 };

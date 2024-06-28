@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import UseState1 from "./UseState1";
+import ToDoList from "./ToDoList";
+import Form from "./Form";
 
 const UseState = () => {
 
@@ -80,8 +83,11 @@ const handleCount =  function(){
     //3
 
     <>
-    <h1>{count}</h1>
-    <button onClick={handleCount}>Increase</button>
+    {/* <h1>{count}</h1>
+    <button onClick={handleCount}>Increase</button> */}
+    {/* <UseState1 /> */}
+    {/* <ToDoList /> */}
+    <Form />
     </>
   );
 };
